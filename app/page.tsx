@@ -1,4 +1,5 @@
 import { Header } from "@/components/header";
+import StoreHighlights from "@/components/header/StoreHighlights";
 import { Navbar } from "@/components/navigation";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="font-sans h-full w-full">
       <Navbar />
       <Header />
+      <StoreHighlights />
     </div>
   );
 }
