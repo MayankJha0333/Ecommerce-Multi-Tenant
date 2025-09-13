@@ -8,7 +8,7 @@ interface CategoryCardV1Props {
   item: CategoryItem;
 }
 
-const CategoryCardV1 = ({ item }: CategoryCardV1Props) => {
+export const CategoryCardV1 = ({ item }: CategoryCardV1Props) => {
   return (
     <motion.div
       className="shadow-md rounded-2xl h-fit bg-white origin-center" // origin-center ensures zoom from middle
@@ -20,7 +20,7 @@ const CategoryCardV1 = ({ item }: CategoryCardV1Props) => {
         ease: "easeOut",
       }}
     >
-      <div className="w-64 h-[460px] relative overflow-hidden rounded-2xl flex justify-center items-end">
+      <div className="basic-product-card relative overflow-hidden rounded-2xl flex justify-center items-end">
         <Image
           src={item.image}
           alt={item.title}
@@ -55,5 +55,3 @@ const CategoryCardV1 = ({ item }: CategoryCardV1Props) => {
     </motion.div>
   );
 };
-
-export default CategoryCardV1;

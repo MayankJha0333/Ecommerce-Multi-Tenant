@@ -130,3 +130,11 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.basic-category-card {
+  @apply w-64 h-[460px];
+}
+
+.basic-product-card {
+  @apply w-64 h-[340px];
+}

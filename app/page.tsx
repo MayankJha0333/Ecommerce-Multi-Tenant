@@ -2,6 +2,7 @@ import { Header } from "@/components/header";
 import StoreHighlights from "@/components/storeHighlight/StoreHighlights";
 import { Navbar } from "@/components/navigation";
 import CategorySection from "@/components/category/CategorySection";
+import ProudctofDay from "@/components/section/ProudctofDay";
 
 export default function Home() {
   return (
@@ -9,7 +10,10 @@ export default function Home() {
       <Navbar />
       <Header />
       <StoreHighlights />
-      <CategorySection />
+      <div className="bg-[#f7f8fc]">
+        <CategorySection />
+        <ProudctofDay />
+      </div>
     </div>
   );
 }
